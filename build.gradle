@@ -1,0 +1,18 @@
+apply plugin: 'application'
+
+mainClassName = 'br.com.eteg.mauricinho.Main'
+
+repositories {
+    maven {
+        url 'http://repository.pentaho.org/artifactory/repo'
+    }
+}
+
+dependencies {
+    compile group: 'pentaho-kettle', name: 'kettle-core', version: '7.0.0.5-82'
+    compile group: 'pentaho-kettle', name: 'kettle-dbdialog', version: '7.0.0.5-82'
+    compile group: 'pentaho-kettle', name: 'kettle-engine', version: '7.0.0.5-82'
+    compile group: 'pentaho-kettle', name: 'kettle-ui-swt', version: '7.0.0.5-82'
+    compile group: 'pentaho-kettle', name: 'kettle5-log4j-plugin', version: '7.0.0.5-82'
+}
+
